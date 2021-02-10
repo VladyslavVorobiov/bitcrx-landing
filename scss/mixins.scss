@@ -1,0 +1,28 @@
+@import "./constants.scss";
+
+@mixin position($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+    
+@mixin position-horizontal-center($top) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+    
+@mixin font-parameters($font-family, $font-size, $line-height, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+    
+@mixin align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
