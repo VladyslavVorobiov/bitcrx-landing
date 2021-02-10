@@ -1,5 +1,13 @@
 @import "./constants.scss";
 
+@mixin Epilogue-font {
+	font-family: 'Epilogue', Arial, Tahoma, sans-serif;
+}
+
+@mixin Open-Sans-font {
+	font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+}
+
 @mixin position($position, $top, $left) {
     position: $position;
     top: $top;

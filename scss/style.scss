@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import "./constants.scss";
 @import "./mixins.scss";
 
 html { box-sizing: border-box; }
 body {
-	font-family: 'Epilogue', Arial, Tahoma, sans-serif;
+	@include Epilogue-font;
 }
