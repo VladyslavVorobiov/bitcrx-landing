@@ -3,7 +3,7 @@
 
 .header-wrapper {
 	padding-top: 30px;
-	background-color: $color-purple-dark;
+	background-color: $color-purple-medium;
 
 	.header-content {
 		width: 1140px;
@@ -28,7 +28,6 @@
 				justify-content: space-between;
 	
 				.header-nav-wrapper__item {
-					font-size: 15px;
 	
 					a {
 						color: $color-purple-light;
@@ -46,6 +45,28 @@
 			align-items: center;
 			width: 285px;
 			justify-content: space-between;
+
+			.header-actions__select {
+				background-color: inherit;
+				border: none;
+				color: $color-white;
+				cursor: pointer;
+			}
+
+			.header-actions__button_login {
+				background-color: inherit;
+				border: none;
+				color: $color-white;
+				cursor: pointer;
+			}
+
+			.header-actions__button_sign_up {
+				background: $color_gold;
+				border-radius: 10px;
+				color: $color-purple-dark;
+				padding: 10px 30px;
+				cursor: pointer;
+			}
 		}
 	}
 }

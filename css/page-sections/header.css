@@ -17,14 +17,28 @@
         align-items: center;
         width: 382px;
         justify-content: space-between; }
-        .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item {
-          font-size: 15px; }
-          .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a {
-            color: #AD7ABF; }
-            .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a:hover {
-              color: #FFFFFF; }
+        .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a {
+          color: #AD7ABF; }
+          .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a:hover {
+            color: #FFFFFF; }
     .header-wrapper .header-content .header-actions {
       display: flex;
       align-items: center;
       width: 285px;
       justify-content: space-between; }
+      .header-wrapper .header-content .header-actions .header-actions__select {
+        background-color: inherit;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer; }
+      .header-wrapper .header-content .header-actions .header-actions__button_login {
+        background-color: inherit;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer; }
+      .header-wrapper .header-content .header-actions .header-actions__button_sign_up {
+        background: #FFAE34;
+        border-radius: 10px;
+        color: #390052;
+        padding: 10px 30px;
+        cursor: pointer; }
