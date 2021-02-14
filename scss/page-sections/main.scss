@@ -67,7 +67,7 @@
 				height: 425px;
 				padding: 14px;
 				
-				background: $color_midnightblue;
+				background: $color_midnightblue-100;
 				border-radius: 23px;
 
 				.application-header {
@@ -81,7 +81,7 @@
 					.application-diagram-wapper {
 						width: 386px;
 						height: 365px;
-						background: #240847;
+						background: $color_midnightblue-200;
 						border-radius: 10px;
 					}
 
@@ -89,7 +89,7 @@
 						width: 180px;
 						height: 365px;
 						
-						background: #240847;
+						background: $color_midnightblue-200;
 						border-radius: 10px;
 					}
 				}
