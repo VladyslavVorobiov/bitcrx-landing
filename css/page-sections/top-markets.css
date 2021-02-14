@@ -1,53 +1,100 @@
-.top-markets-wrapper .top-markets-content {
-  width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column; }
-  .top-markets-wrapper .top-markets-content .top-markets__title {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
-    color: #240847;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 50px; }
-  .top-markets-wrapper .top-markets-content .top-markets-coin-info {
+.top-markets-wrapper {
+  font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+  font-weight: 400; }
+  .top-markets-wrapper .top-markets-content {
+    width: 1140px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; }
-    .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card {
-      font-family: 'Open Sans', Arial, Tahoma, sans-serif;
-      font-weight: 400;
-      width: 360px;
-      height: 420px;
-      background-color: #240847;
-      color: #FFFFFF;
-      border-radius: 10px; }
-      .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-header {
-        padding: 30px 30px 0; }
-        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-header .coin-card__number {
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 20px;
-          color: #FFFFFF;
-          opacity: 0.3; }
-        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-header .coin-card__img-logo {
-          display: block;
-          margin: 0 auto; }
-        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-header .coin-card__full-name {
-          font-weight: bold;
-          font-size: 30px;
-          line-height: 40px;
-          text-align: center;
-          margin-top: 15px; }
-        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-header .coin-card__short-name {
-          font-size: 20px;
-          line-height: 25px;
-          text-align: center; }
-      .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-card-exchange {
-        width: 100%;
-        height: 50%;
-        background-image: url("../../img/icons/big-curved-line.svg");
-        background-repeat: no-repeat; }
-    .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper {
+    flex-direction: column; }
+    .top-markets-wrapper .top-markets-content .top-markets__title {
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 50px;
+      color: #240847;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px; }
+    .top-markets-wrapper .top-markets-content .top-markets-coin-info {
       display: flex;
-      flex-direction: column; }
+      justify-content: space-between; }
+      .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card {
+        width: 360px;
+        height: 420px;
+        background-color: #240847;
+        color: #FFFFFF;
+        border-radius: 10px; }
+        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header {
+          padding: 30px 30px 0; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header .coin-primary-card__number {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+            color: #FFFFFF;
+            opacity: 0.3; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header .coin-primary-card__img-logo {
+            display: block;
+            margin: 0 auto; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header .coin-primary-card__full-name {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 15px; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header .coin-primary-card__short-name {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center; }
+        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange {
+          width: 100%;
+          height: 50%;
+          background-image: url("../../img/icons/big-curved-line.svg");
+          background-repeat: no-repeat; }
+      .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper {
+        display: flex;
+        flex-direction: column; }
+        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 750px;
+          height: 90px;
+          box-shadow: 0px 4px 50px rgba(191, 172, 206, 0.3);
+          border-radius: 10px;
+          margin-bottom: 20px;
+          padding: 20px 30px;
+          line-height: 25px; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card__number {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            color: #240847;
+            opacity: 0.15; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card__full-name {
+            color: #240847;
+            font-weight: bold; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card__short-name {
+            color: #B9C4D4; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card-exchange {
+            font-weight: bold; }
+            .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card-exchange .coin-card__bid {
+              color: #580F72; }
+              .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card-exchange .coin-card__bid .coin-card__bid-numbers {
+                color: #240847; }
+            .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card-exchange .coin-card__ask {
+              color: #FFAE34; }
+              .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card-exchange .coin-card__ask .coin-card__ask-numbers {
+                color: #240847;
+                font-weight: normal; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card__percents {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100px;
+            height: 50px;
+            padding: 15px 18px;
+            color: #580F72;
+            font-weight: bold;
+            line-height: 20px;
+            background: linear-gradient(115.36deg, rgba(248, 237, 255, 0.8) -12.33%, #FEFCFF 86.86%);
+            border-radius: 10px; }

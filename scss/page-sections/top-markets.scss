@@ -2,6 +2,7 @@
 @import "../mixins.scss";
 
 .top-markets-wrapper {
+	@include Open-Sans-font;
 
 	.top-markets-content {
 		width: 1140px;
@@ -24,17 +25,16 @@
 			justify-content: space-between;
 
 			.coin-primary-card {
-				@include Open-Sans-font;
 				width: 360px;
 				height: 420px;
 				background-color: $color_midnightblue-200;
 				color: $color-white;
 				border-radius: 10px;
 
-				.coin-card-header {
+				.coin-primary-card-header {
 					padding: 30px 30px 0;
 
-					.coin-card__number {
+					.coin-primary-card__number {
 						font-weight: bold;
 						font-size: 20px;
 						line-height: 20px;
@@ -42,12 +42,12 @@
 						opacity: 0.3;
 					}
 
-					.coin-card__img-logo {
+					.coin-primary-card__img-logo {
 						display: block;
 						margin: 0 auto;
 					}
 
-					.coin-card__full-name {
+					.coin-primary-card__full-name {
 						font-weight: bold;
 						font-size: 30px;
 						line-height: 40px;
@@ -55,14 +55,14 @@
 						margin-top: 15px;
 					}
 
-					.coin-card__short-name {
+					.coin-primary-card__short-name {
 						font-size: 20px;
 						line-height: 25px;
 						text-align: center;
 					}
 				}
 
-				.coin-card-exchange {
+				.coin-primary-card-exchange {
 					width: 100%;
 					height: 50%;
 					background-image: url('../../img/icons/big-curved-line.svg');
@@ -73,8 +73,74 @@
 			.coin-card-list-wrapper {
 				display: flex;
 				flex-direction: column;
-			}
 
+				.coin-card {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+					width: 750px;
+					height: 90px;
+					box-shadow: 0px 4px 50px rgba(191, 172, 206, 0.3);
+					border-radius: 10px;
+					margin-bottom: 20px;
+					padding: 20px 30px;
+					line-height: 25px;
+
+					.coin-card__number {
+						font-weight: bold;
+						font-size: 20px;
+						line-height: 30px;
+						color: $color_midnightblue-200;
+						opacity: 0.15;
+					}
+
+					.coin-card__full-name {
+						color: $color_midnightblue-200;
+						font-weight: bold;
+					}
+
+					.coin-card__short-name {
+						color: $color_grey;
+					}
+
+					.coin-card-exchange {
+						font-weight: bold;
+
+						.coin-card__bid {
+							color: $color-purple-medium;
+	
+							.coin-card__bid-numbers {
+								color: $color_midnightblue-200;
+							}
+						}
+	
+						.coin-card__ask {
+							color: $color_gold;
+
+							.coin-card__ask-numbers {
+								color: $color_midnightblue-200;
+								font-weight: normal;
+							}
+						}
+					}
+
+					.coin-card__percents {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						width: 100px;
+						height: 50px;
+						padding: 15px 18px;
+						color: $color-purple-medium;
+						font-weight: bold;
+						line-height: 20px;
+
+						background: linear-gradient(115.36deg, rgba(248, 237, 255, 0.8) -12.33%, #FEFCFF 86.86%);
+						border-radius: 10px;
+					}
+				}
+			}
 		}
 	}
 }
