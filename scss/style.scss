@@ -6,6 +6,7 @@
 @import "./page-sections/main.scss";
 @import "./page-sections/top-markets.scss";
 @import "./page-sections/features.scss";
+@import "./page-sections/sign-up.scss";
 
 * { box-sizing: border-box; }
 body {
@@ -29,7 +30,7 @@ a {
 	text-decoration: none;
 }
 
-button {
+button, input {
 	border-width: 0px;
 
 	&:focus {

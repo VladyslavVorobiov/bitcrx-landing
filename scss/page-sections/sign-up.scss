@@ -1,0 +1,58 @@
+@import "../constants.scss";
+@import "../mixins.scss";
+
+.sign-up-wrapper {
+	background: $color-light-magnolia;
+	color: $color-midnightblue-200;
+	padding: 70px 0 40px;
+
+	.sign-up-content {
+		width: $content-width;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.sign-up-content__title {
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 55px;
+			width: 455px;
+
+			.sign-up-content__title-highlighted {
+				color: $color-gold;
+			}
+		}
+
+		.sign-up-window {
+			width: 555px;
+			height: 160px;
+			padding: 55px;
+
+			background-color: $color-midnightblue-200;
+			border-radius: 20px;
+
+			.sign-up-window-form {
+				display: flex;
+				justify-content: space-between;
+
+				.sign-up-window-form__input {
+					width: 280px;
+					height: 50px;
+					color: $color-white;
+
+					border: 1px solid $color-white;
+					padding: 16px 25px;
+					box-sizing: border-box;
+					border-radius: 10px;
+					background-color: inherit;
+				}
+
+				.sign-up-window-form__button {
+					@include primary-button;
+					padding: 16px 40px;
+				}
+			}
+		}
+	}
+}
