@@ -142,5 +142,13 @@
 				}
 			}
 		}
+
+		.top-markets-actions {
+			text-align: center;
+
+			.top-markets-actions__button-explore {
+				@include primary-button;
+			}
+		}
 	}
 }

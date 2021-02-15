@@ -61,11 +61,7 @@
 			}
 
 			.header-actions__button_sign_up {
-				background: $color_gold;
-				border-radius: 10px;
-				color: $color-purple-dark;
-				padding: 10px 30px;
-				cursor: pointer;
+				@include primary-button;
 			}
 		}
 	}
