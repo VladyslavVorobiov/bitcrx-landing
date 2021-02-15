@@ -6,7 +6,7 @@
 	background-color: $color-purple-medium;
 
 	.main-content {
-		width: 1140px;
+		width: $content-width;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
@@ -29,7 +29,7 @@
 				}
 
 				.main-content-information__title_highlight {
-					color: $color_gold;
+					color: $color-gold;
 				}
 
 				.main-content-information__caption {
@@ -49,10 +49,10 @@
 					font-size: 50px;
 					line-height: 60px;
 
-					background: -webkit-linear-gradient(left, $color_gold , $color_gold_dark);
-					background: -o-linear-gradient(right, $color_gold, $color_gold_dark);
-					background: -moz-linear-gradient(right, $color_gold, $color_gold_dark);
-					background: linear-gradient(to right, $color_gold , $color_gold_dark); 
+					background: -webkit-linear-gradient(left, $color-gold , $color-gold-dark);
+					background: -o-linear-gradient(right, $color-gold, $color-gold-dark);
+					background: -moz-linear-gradient(right, $color-gold, $color-gold-dark);
+					background: linear-gradient(to right, $color-gold , $color-gold-dark); 
 				 -webkit-background-clip: text;
 				 -webkit-text-fill-color: transparent;
 				}
@@ -67,7 +67,7 @@
 				height: 425px;
 				padding: 14px;
 				
-				background: $color_midnightblue-100;
+				background: $color-midnightblue-100;
 				border-radius: 23px;
 
 				.application-header {
@@ -81,7 +81,7 @@
 					.application-diagram-wapper {
 						width: 386px;
 						height: 365px;
-						background: $color_midnightblue-200;
+						background: $color-midnightblue-200;
 						border-radius: 10px;
 					}
 
@@ -89,7 +89,7 @@
 						width: 180px;
 						height: 365px;
 						
-						background: $color_midnightblue-200;
+						background: $color-midnightblue-200;
 						border-radius: 10px;
 					}
 				}

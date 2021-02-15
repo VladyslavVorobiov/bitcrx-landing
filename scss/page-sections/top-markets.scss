@@ -5,7 +5,7 @@
 	@include Open-Sans-font;
 
 	.top-markets-content {
-		width: 1140px;
+		width: $content-width;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
@@ -14,7 +14,7 @@
 			font-weight: bold;
 			font-size: 40px;
 			line-height: 50px;
-			color: $color_midnightblue-200;
+			color: $color-midnightblue-200;
 			text-align: center;
 			width: 100%;
 			margin-bottom: 50px;
@@ -27,7 +27,7 @@
 			.coin-primary-card {
 				width: 360px;
 				height: 420px;
-				background-color: $color_midnightblue-200;
+				background-color: $color-midnightblue-200;
 				color: $color-white;
 				border-radius: 10px;
 
@@ -91,17 +91,17 @@
 						font-weight: bold;
 						font-size: 20px;
 						line-height: 30px;
-						color: $color_midnightblue-200;
+						color: $color-midnightblue-200;
 						opacity: 0.15;
 					}
 
 					.coin-card__full-name {
-						color: $color_midnightblue-200;
+						color: $color-midnightblue-200;
 						font-weight: bold;
 					}
 
 					.coin-card__short-name {
-						color: $color_grey;
+						color: $color-grey;
 					}
 
 					.coin-card-exchange {
@@ -111,15 +111,15 @@
 							color: $color-purple-medium;
 	
 							.coin-card__bid-numbers {
-								color: $color_midnightblue-200;
+								color: $color-midnightblue-200;
 							}
 						}
 	
 						.coin-card__ask {
-							color: $color_gold;
+							color: $color-gold;
 
 							.coin-card__ask-numbers {
-								color: $color_midnightblue-200;
+								color: $color-midnightblue-200;
 								font-weight: normal;
 							}
 						}
