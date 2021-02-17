@@ -7,6 +7,7 @@
 @import "./page-sections/top-markets.scss";
 @import "./page-sections/features.scss";
 @import "./page-sections/sign-up.scss";
+@import "./page-sections/footer.scss";
 
 * { box-sizing: border-box; }
 body {
@@ -27,6 +28,7 @@ ul {
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
