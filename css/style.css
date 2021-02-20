@@ -82,6 +82,8 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
     .main-wrapper .main-content .main-content-application {
+      font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+      font-weight: 400;
       color: #FFFFFF;
       z-index: 1000; }
       .main-wrapper .main-content .main-content-application .application-wrapper {
@@ -91,7 +93,34 @@
         background: #180234;
         border-radius: 23px; }
         .main-wrapper .main-content .main-content-application .application-wrapper .application-header {
-          margin-bottom: 12px; }
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 544px; }
+          .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper {
+            background-color: #4C2976;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 14px;
+            padding: 5px 10px; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper .application-header__crypto-name {
+              margin-left: 8px; }
+          .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item {
+            color: #FFFFFF;
+            font-size: 9px;
+            line-height: 14px; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-title {
+              opacity: 0.5; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-content {
+              font-weight: bold; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-content .application-header__item-content_gold {
+                color: #C65E0F;
+                font-weight: normal; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-content .application-header__item-content_green {
+                color: #58BA74;
+                font-weight: normal; }
         .main-wrapper .main-content .main-content-application .application-wrapper .application-content {
           display: flex;
           justify-content: space-between; }

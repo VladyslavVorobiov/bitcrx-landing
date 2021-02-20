@@ -59,6 +59,7 @@
 		}
 
 		.main-content-application {
+			@include Open-Sans-font;
 			color: $color-white;
 			z-index: 1000;
 
@@ -72,6 +73,48 @@
 
 				.application-header {
 					margin-bottom: 12px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 544px;
+
+					.application-header__crypto-name-wrapper {
+						background-color: $color-purple-light-200;
+						border-radius: 4px;
+						font-weight: bold;
+						font-size: 10px;
+						line-height: 14px;
+						padding: 5px 10px;
+
+						.application-header__crypto-name {
+							margin-left: 8px;
+						}
+					}
+
+					.application-header__item {
+							color: $color-white;
+							font-size: 9px;
+							line-height: 14px;
+
+						.application-header__item-title {
+							opacity: 0.5;
+						}
+
+						.application-header__item-content {
+							font-weight: bold;
+
+							.application-header__item-content_gold {
+								color: $color-gold-dark;
+								font-weight: normal;
+							}
+
+							.application-header__item-content_green {
+								color: $color-green;
+								font-weight: normal;
+							}
+						}
+					}
+
 				}
 
 				.application-content {
