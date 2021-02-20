@@ -2,9 +2,8 @@
 @import "../mixins.scss";
 
 .features-wrapper {
-	background: $color-light-magnolia;
 	color: $color-midnightblue-200;
-	padding: 65px 0 65px;
+	padding-top: 110px;
 
 	.features-content {
 		width: $content-width;

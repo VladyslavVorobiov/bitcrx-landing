@@ -1,0 +1,27 @@
+.diagonal-box-wrapper {
+  position: relative; }
+
+.diagonal-box-wrapper_overflow {
+  overflow: hidden; }
+
+.diagonal-box-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(-10deg);
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden; }
+
+.diagonal-box-content {
+  max-width: 100vw;
+  position: relative; }
+
+.bg-skew-white:before {
+  background: #FFFFFF; }
+
+.bg-skew-magnolia:before {
+  background: #FEF9FF; }

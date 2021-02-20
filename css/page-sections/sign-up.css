@@ -1,7 +1,8 @@
 .sign-up-wrapper {
-  background: #FEF9FF;
   color: #240847;
-  padding: 70px 0 40px; }
+  margin: 110px 0 0;
+  position: relative;
+  top: 20px; }
   .sign-up-wrapper .sign-up-content {
     width: 1140px;
     margin: 0 auto;

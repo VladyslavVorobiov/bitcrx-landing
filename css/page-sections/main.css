@@ -1,6 +1,5 @@
 .main-wrapper {
-  padding-top: 95px;
-  background-color: #580F72; }
+  padding: 95px 0 30px; }
   .main-wrapper .main-content {
     width: 1140px;
     margin: 0 auto;
@@ -10,7 +9,7 @@
     .main-wrapper .main-content .main-content-information {
       display: flex;
       flex-direction: column;
-      width: 460px;
+      width: 400px;
       color: #FFFFFF; }
       .main-wrapper .main-content .main-content-information .main-content-information-text .main-content-information__title {
         font-weight: bold;
@@ -37,7 +36,8 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
     .main-wrapper .main-content .main-content-application {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      z-index: 1000; }
       .main-wrapper .main-content .main-content-application .application-wrapper {
         width: 605px;
         height: 425px;

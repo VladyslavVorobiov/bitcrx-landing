@@ -1,0 +1,37 @@
+@import './constants.scss';
+
+$angle: -10deg;
+
+.diagonal-box-wrapper {
+  position: relative;
+}
+
+.diagonal-box-wrapper_overflow {
+	overflow: hidden;
+}
+
+.diagonal-box-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy($angle);
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
+
+.diagonal-box-content {
+  max-width: $width;
+  position: relative;
+}
+
+.bg-skew-white:before {
+  background: $color-white;
+}
+
+.bg-skew-magnolia:before {
+	background: $color-light-magnolia;
+}

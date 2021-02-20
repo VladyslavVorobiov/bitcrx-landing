@@ -2,8 +2,7 @@
 @import "../mixins.scss";
 
 .main-wrapper {
-	padding-top: 95px;
-	background-color: $color-purple-medium;
+	padding: 95px 0 30px;
 
 	.main-content {
 		width: $content-width;
@@ -16,7 +15,7 @@
 		.main-content-information {
 			display: flex;
 			flex-direction: column;
-			width: 460px;
+			width: 400px;
 			color: $color-white;
 
 			.main-content-information-text {
@@ -61,6 +60,7 @@
 
 		.main-content-application {
 			color: $color-white;
+			z-index: 1000;
 
 			.application-wrapper {
 				width: 605px;

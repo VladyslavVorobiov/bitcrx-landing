@@ -1,6 +1,7 @@
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 120px 0 30px; }
   .top-markets-wrapper .top-markets-content {
     width: 1140px;
     margin: 0 auto;
@@ -99,6 +100,7 @@
             background: linear-gradient(115.36deg, rgba(248, 237, 255, 0.8) -12.33%, #FEFCFF 86.86%);
             border-radius: 10px; }
     .top-markets-wrapper .top-markets-content .top-markets-actions {
+      margin-top: 15px;
       text-align: center; }
       .top-markets-wrapper .top-markets-content .top-markets-actions .top-markets-actions__button-explore {
         background: #FFAE34;

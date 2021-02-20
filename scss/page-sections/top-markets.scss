@@ -3,6 +3,7 @@
 
 .top-markets-wrapper {
 	@include Open-Sans-font;
+	padding: 120px 0 30px;
 
 	.top-markets-content {
 		width: $content-width;
@@ -144,6 +145,7 @@
 		}
 
 		.top-markets-actions {
+			margin-top: 15px;
 			text-align: center;
 
 			.top-markets-actions__button-explore {

@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 .header-wrapper {
-  padding-top: 30px;
-  background-color: #580F72; }
+  padding-top: 30px; }
   .header-wrapper .header-content {
     width: 1140px;
     margin: 0 auto;
@@ -46,8 +45,7 @@
         cursor: pointer; }
 
 .main-wrapper {
-  padding-top: 95px;
-  background-color: #580F72; }
+  padding: 95px 0 30px; }
   .main-wrapper .main-content {
     width: 1140px;
     margin: 0 auto;
@@ -57,7 +55,7 @@
     .main-wrapper .main-content .main-content-information {
       display: flex;
       flex-direction: column;
-      width: 460px;
+      width: 400px;
       color: #FFFFFF; }
       .main-wrapper .main-content .main-content-information .main-content-information-text .main-content-information__title {
         font-weight: bold;
@@ -84,7 +82,8 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
     .main-wrapper .main-content .main-content-application {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      z-index: 1000; }
       .main-wrapper .main-content .main-content-application .application-wrapper {
         width: 605px;
         height: 425px;
@@ -109,7 +108,8 @@
 
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 120px 0 30px; }
   .top-markets-wrapper .top-markets-content {
     width: 1140px;
     margin: 0 auto;
@@ -208,6 +208,7 @@
             background: linear-gradient(115.36deg, rgba(248, 237, 255, 0.8) -12.33%, #FEFCFF 86.86%);
             border-radius: 10px; }
     .top-markets-wrapper .top-markets-content .top-markets-actions {
+      margin-top: 15px;
       text-align: center; }
       .top-markets-wrapper .top-markets-content .top-markets-actions .top-markets-actions__button-explore {
         background: #FFAE34;
@@ -217,9 +218,8 @@
         cursor: pointer; }
 
 .features-wrapper {
-  background: #FEF9FF;
   color: #240847;
-  padding: 65px 0 65px; }
+  padding-top: 110px; }
   .features-wrapper .features-content {
     width: 1140px;
     margin: 0 auto;
@@ -248,9 +248,10 @@
         opacity: 0.7; }
 
 .sign-up-wrapper {
-  background: #FEF9FF;
   color: #240847;
-  padding: 70px 0 40px; }
+  margin: 110px 0 0;
+  position: relative;
+  top: 20px; }
   .sign-up-wrapper .sign-up-content {
     width: 1140px;
     margin: 0 auto;
@@ -300,8 +301,8 @@
           padding: 16px 40px; }
 
 .footer-wrapper {
-  background: #580F72;
-  padding: 60px 0 20px;
+  margin-top: 100px;
+  padding: 40px 0 20px;
   color: #FFFFFF; }
   .footer-wrapper .footer-content {
     width: 1140px;
@@ -330,13 +331,42 @@
       opacity: 0.3;
       margin-top: 20px; }
 
+.diagonal-box-wrapper {
+  position: relative; }
+
+.diagonal-box-wrapper_overflow {
+  overflow: hidden; }
+
+.diagonal-box-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(-10deg);
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden; }
+
+.diagonal-box-content {
+  max-width: 100vw;
+  position: relative; }
+
+.bg-skew-white:before {
+  background: #FFFFFF; }
+
+.bg-skew-magnolia:before {
+  background: #FEF9FF; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: 'Epilogue', Arial, Tahoma, sans-serif;
   font-weight: 400;
-  font-size: 15px; }
+  font-size: 15px;
+  background-color: #580F72; }
 
 h1, h2, h3, h4, p {
   padding: 0;

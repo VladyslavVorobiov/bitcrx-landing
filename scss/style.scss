@@ -8,11 +8,13 @@
 @import "./page-sections/features.scss";
 @import "./page-sections/sign-up.scss";
 @import "./page-sections/footer.scss";
+@import "./skew-line-bg.scss";
 
 * { box-sizing: border-box; }
 body {
 	@include Epilogue-font;
 	font-size: 15px;
+	background-color: $color-purple-medium;
 }
 
 h1, h2, h3, h4, p {

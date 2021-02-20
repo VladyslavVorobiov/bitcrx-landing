@@ -2,9 +2,10 @@
 @import "../mixins.scss";
 
 .sign-up-wrapper {
-	background: $color-light-magnolia;
 	color: $color-midnightblue-200;
-	padding: 70px 0 40px;
+	margin: 110px 0 0;
+	position: relative;
+  top: 20px;
 
 	.sign-up-content {
 		width: $content-width;
