@@ -126,6 +126,37 @@
 						height: 365px;
 						background: $color-midnightblue-200;
 						border-radius: 10px;
+						padding: 10px;
+
+						.application-diagram-title {
+							display: flex;
+							justify-content: space-between;
+
+							.application-diagram-title-menu {
+								display: flex;
+
+								.application-diagram-title-menu__item {
+									font-size: 8px;
+									color: $color-white;
+									opacity: 0.5;
+									margin-right: 11px;
+									width: 18px;
+									text-align: center;
+								}
+								.application-diagram-title-menu__item_highlight {
+									opacity: 1;
+									font-weight: bold;
+								}
+
+								.application-diagram-title-menu__item_gold-border {
+									border-bottom: 1px solid $color-gold;
+								}
+
+								.application-diagram-title-menu__item_green-border {
+									border-bottom: 1px solid $color-green;
+								}
+							}
+						}
 					}
 
 					.application-actions-wrapper {

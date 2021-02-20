@@ -82,7 +82,27 @@
             width: 386px;
             height: 365px;
             background: #240847;
-            border-radius: 10px; }
+            border-radius: 10px;
+            padding: 10px; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title {
+              display: flex;
+              justify-content: space-between; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu {
+                display: flex; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item {
+                  font-size: 8px;
+                  color: #FFFFFF;
+                  opacity: 0.5;
+                  margin-right: 11px;
+                  width: 18px;
+                  text-align: center; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item_highlight {
+                  opacity: 1;
+                  font-weight: bold; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item_gold-border {
+                  border-bottom: 1px solid #FFAE34; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item_green-border {
+                  border-bottom: 1px solid #58BA74; }
           .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper {
             width: 180px;
             height: 365px;
