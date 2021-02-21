@@ -248,6 +248,32 @@
 							}
 						}
 
+						.application-actions-range-bar {
+							width: 100%;
+							height: 3px;
+							margin: 3px 0 17px;
+							background-color: $color-purple-light-200;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+
+							.application-actions-range-bar__item {
+								width: 3px;
+								height: 7px;
+								background: $color-white;
+								border-radius: 5px;
+							}
+
+							.application-actions-range-bar__item_selected {
+								width: 10px;
+								height: 10px;
+								background: $color-gold;
+								box-shadow: 0px 0px 6.33887px rgba(248, 193, 49, 0.5);
+								border-radius: 5px;
+								cursor: pointer;
+							} 
+						}
+
 						.application-actions-submit__button {
 							display: block;
 							width: 100%;
