@@ -218,6 +218,47 @@
 								box-shadow: 0px 0px 6.33887px rgba(248, 193, 49, 0.5);
 							}
 						}
+
+						.application-actions-quantity-input {
+							display: flex;
+							justify-content: space-between;
+
+							background-color: $color-purple-light-200;
+							border-radius: 4px;
+							margin-bottom: 11px;
+							padding: 3px 8px;
+
+							.application-actions-quantity-input-content {
+								text-align: center;
+
+								.application-actions-quantity-input__title {
+									font-size: 7px;
+									opacity: 0.5;
+								}
+
+								.application-actions-quantity-input__value {
+									font-weight: bold;
+									font-size: 11px;
+									line-height: 14px;
+								}
+							}
+
+							.application-actions-quantity-input__button {
+								font-size: 14px;
+							}
+						}
+
+						.application-actions-submit__button {
+							display: block;
+							width: 100%;
+							background-color: $color-green;
+							border-radius: 4px;
+							padding: 7px 0;
+							text-align: center;
+							font-weight: bold;
+							font-size: 11px;
+							line-height: 14px;
+						}
 					}
 				}
 			}
