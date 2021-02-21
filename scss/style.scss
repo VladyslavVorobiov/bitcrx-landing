@@ -36,10 +36,15 @@ a {
 
 button, input {
 	border-width: 0px;
+	background-color: inherit;
 
 	&:focus {
 		outline: none;
 	}
+}
+
+button {
+	cursor: pointer;
 }
 
 select {
