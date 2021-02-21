@@ -85,7 +85,8 @@
       font-family: 'Open Sans', Arial, Tahoma, sans-serif;
       font-weight: 400;
       color: #FFFFFF;
-      z-index: 1000; }
+      z-index: 1000;
+      position: relative; }
       .main-wrapper .main-content .main-content-application .application-wrapper {
         width: 605px;
         height: 425px;
@@ -248,6 +249,15 @@
               font-weight: bold;
               font-size: 11px;
               line-height: 14px; }
+      .main-wrapper .main-content .main-content-application .application-course-diagram-window {
+        width: 156px;
+        height: 110px;
+        position: absolute;
+        left: -78px;
+        top: 125px;
+        background: #2F0B5C;
+        border-radius: 20px;
+        padding: 15px; }
 
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;

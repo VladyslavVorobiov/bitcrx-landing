@@ -62,6 +62,7 @@
 			@include Open-Sans-font;
 			color: $color-white;
 			z-index: 1000;
+			position: relative;
 
 			.application-wrapper {
 				width: 605px;
@@ -300,6 +301,16 @@
 				}
 			}
 
+			.application-course-diagram-window {
+				width: 156px;
+				height: 110px;
+				position: absolute;
+				left: -78px;
+				top: 125px;
+				background: $color-purple-medium-100;
+				border-radius: 20px;
+				padding: 15px;
+			}
 		}
 	}
 
