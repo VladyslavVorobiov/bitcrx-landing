@@ -185,6 +185,13 @@
                 box-shadow: 0px 0px 6.33887px rgba(248, 193, 49, 0.5);
                 border-radius: 5px;
                 cursor: pointer; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-available-sum {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 4px; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-available-sum .application-actions-available-sum__label {
+                opacity: 0.5; }
             .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-submit__button {
               display: block;
               width: 100%;

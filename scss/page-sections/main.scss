@@ -274,6 +274,17 @@
 							} 
 						}
 
+						.application-actions-available-sum {
+							width: 100%;
+							display: flex;
+							justify-content: space-between;
+							margin-bottom: 4px;
+
+							.application-actions-available-sum__label {
+								opacity: 0.5;
+							}
+						}
+
 						.application-actions-submit__button {
 							display: block;
 							width: 100%;
