@@ -152,8 +152,47 @@
           .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper {
             width: 180px;
             height: 357px;
+            padding: 10px;
+            font-size: 8px;
             background: #240847;
             border-radius: 10px; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions__title {
+              font-weight: 600;
+              line-height: 14px;
+              margin-bottom: 11px; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-tabs {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 11px; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-tabs .application-actions-tabs__item {
+                color: #FFFFFF;
+                width: 50%;
+                font-size: 11px;
+                line-height: 14px;
+                text-align: center;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #4C2976; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-tabs .application-actions-tabs__item_highlight {
+                font-weight: bold;
+                border-bottom: 1px solid #FFAE34; }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-market-bar {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 11px;
+              background-color: #4C2976;
+              border-radius: 4px; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-market-bar .application-actions-market-bar__item {
+                color: #FFFFFF;
+                width: 50%;
+                line-height: 14px;
+                text-align: center;
+                padding: 3px 0;
+                background-color: #4C2976;
+                border-radius: 4px; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-market-bar .application-actions-market-bar__item_highlight {
+                color: #240847;
+                background-color: #FFAE34;
+                box-shadow: 0px 0px 6.33887px rgba(248, 193, 49, 0.5); }
 
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
