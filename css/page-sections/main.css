@@ -212,3 +212,19 @@
         background: #2F0B5C;
         border-radius: 20px;
         padding: 15px; }
+        .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window__title {
+          margin-bottom: 5px; }
+        .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-content {
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px; }
+          .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-content .application-course-diagram-window-numbers .application-course-diagram-window__percents {
+            color: #58BA74;
+            margin-bottom: 3px; }
+          .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-content .application-course-diagram-window__time {
+            color: #AD7ABF;
+            opacity: 0.8; }
+        .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-graphic-wrapper {
+          position: absolute;
+          left: 0;
+          bottom: 0; }

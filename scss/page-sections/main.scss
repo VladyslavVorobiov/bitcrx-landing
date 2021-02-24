@@ -310,6 +310,35 @@
 				background: $color-purple-medium-100;
 				border-radius: 20px;
 				padding: 15px;
+
+				.application-course-diagram-window__title {
+					margin-bottom: 5px;
+				}
+
+				.application-course-diagram-window-content {
+					display: flex;
+					justify-content: space-between;
+					font-size: 12px;
+
+					.application-course-diagram-window-numbers {
+
+						.application-course-diagram-window__percents {
+							color: $color-green;
+							margin-bottom: 3px;
+						}
+					}
+
+					.application-course-diagram-window__time {
+						color: $color-purple-light;
+						opacity: 0.8;
+					}
+				}
+
+				.application-course-diagram-window-graphic-wrapper {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+				}
 			}
 		}
 	}
