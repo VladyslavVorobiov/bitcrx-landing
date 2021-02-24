@@ -340,6 +340,48 @@
 					bottom: 0;
 				}
 			}
+
+			.application-course-table-window {
+				width: 220px;
+				height: 110px;
+				position: absolute;
+				left: 270px;
+				bottom: -40px;
+				background: $color-purple-medium-100;
+				border-radius: 20px;
+				padding: 15px;
+
+				.application-course-table-window__title {
+					font-size: 10px;
+					margin-bottom: 10px;
+				}
+
+				.application-course-table-window-content {
+					font-size: 9px;
+
+					.application-course-table-window-header {
+						display: flex;
+						justify-content: space-between;
+						color: $color-purple-light;
+						opacity: 0.8;
+						margin-bottom: 12px;
+					}
+
+					.application-course-table-window-row {
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 9px;
+
+						.application-course-table-window-row__item_green {
+							color: $color-green;
+						}
+
+						.application-course-table-window-row__item_red {
+							color: $color-red;
+						}
+					}
+				}
+			}
 		}
 	}
 

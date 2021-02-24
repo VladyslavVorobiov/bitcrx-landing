@@ -274,6 +274,34 @@
           position: absolute;
           left: 0;
           bottom: 0; }
+      .main-wrapper .main-content .main-content-application .application-course-table-window {
+        width: 220px;
+        height: 110px;
+        position: absolute;
+        left: 270px;
+        bottom: -40px;
+        background: #2F0B5C;
+        border-radius: 20px;
+        padding: 15px; }
+        .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window__title {
+          font-size: 10px;
+          margin-bottom: 10px; }
+        .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content {
+          font-size: 9px; }
+          .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content .application-course-table-window-header {
+            display: flex;
+            justify-content: space-between;
+            color: #AD7ABF;
+            opacity: 0.8;
+            margin-bottom: 12px; }
+          .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content .application-course-table-window-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 9px; }
+            .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content .application-course-table-window-row .application-course-table-window-row__item_green {
+              color: #58BA74; }
+            .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content .application-course-table-window-row .application-course-table-window-row__item_red {
+              color: #FF6767; }
 
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
