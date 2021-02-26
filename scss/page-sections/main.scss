@@ -64,6 +64,12 @@
 			z-index: 1000;
 			position: relative;
 
+			transition: all .8s ease-in-out;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+
 			.application-wrapper {
 				width: 605px;
 				height: 425px;

@@ -40,7 +40,10 @@
       font-weight: 400;
       color: #FFFFFF;
       z-index: 1000;
-      position: relative; }
+      position: relative;
+      transition: all .8s ease-in-out; }
+      .main-wrapper .main-content .main-content-application:hover {
+        transform: scale(1.2); }
       .main-wrapper .main-content .main-content-application .application-wrapper {
         width: 605px;
         height: 425px;
