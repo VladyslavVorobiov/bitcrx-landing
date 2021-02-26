@@ -328,8 +328,12 @@
         height: 420px;
         background-color: #240847;
         color: #FFFFFF;
-        border-radius: 10px; }
+        border-radius: 10px;
+        transition: all .2s ease-in-out; }
+        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card:hover {
+          transform: scale(1.03); }
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header {
+          height: 40%;
           padding: 30px 30px 0; }
           .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header .coin-primary-card__number {
             font-weight: bold;
@@ -350,11 +354,29 @@
             font-size: 20px;
             line-height: 25px;
             text-align: center; }
-        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange {
+        .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange-wrapper {
           width: 100%;
-          height: 50%;
+          height: 60%;
           background-image: url("../../img/icons/big-curved-line.svg");
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding: 0 40px 40px;
+          font-size: 20px; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange-wrapper .coin-primary-card-exchange-course .coin-primary-card__bid {
+            font-weight: bold;
+            margin-bottom: 10px; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange-wrapper .coin-primary-card-exchange-percent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 110px;
+            height: 50px;
+            padding: 14px 14px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px; }
       .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper {
         display: flex;
         flex-direction: column; }
@@ -369,7 +391,10 @@
           border-radius: 10px;
           margin-bottom: 20px;
           padding: 20px 30px;
-          line-height: 25px; }
+          line-height: 25px;
+          transition: all .2s ease-in-out; }
+          .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card:hover {
+            transform: scale(1.03); }
           .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-card-list-wrapper .coin-card .coin-card__number {
             font-weight: bold;
             font-size: 20px;
