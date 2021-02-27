@@ -1,4 +1,8 @@
 node_modules/
 img/
 
+css/
+
+!css/style.css
+
 .DS_Store
