@@ -4,5 +4,6 @@ img/
 css/*
 
 !css/style.css
+!css/normalize.css
 
 .DS_Store
