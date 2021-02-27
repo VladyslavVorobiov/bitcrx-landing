@@ -7,12 +7,21 @@
 	position: relative;
   top: 20px;
 
+	@include for-phone-only {
+		margin: 30px 0 0;
+	}
+
 	.sign-up-content {
 		width: $content-width;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@include for-phone-only {
+			width: 90vw;
+			flex-direction: column;
+		}
 
 		.sign-up-content__title {
 			font-weight: bold;
@@ -22,6 +31,13 @@
 
 			.sign-up-content__title-highlighted {
 				color: $color-gold;
+			}
+
+			@include for-phone-only {
+				font-size: 20px;
+				line-height: 30px;
+				width: 100%;
+				text-align: center;
 			}
 		}
 
@@ -33,9 +49,20 @@
 			background-color: $color-midnightblue-200;
 			border-radius: 20px;
 
+			@include for-phone-only {
+				width: 100%;
+				height: 100%;
+				padding: 15px;
+			}
+
 			.sign-up-window-form {
 				display: flex;
 				justify-content: space-between;
+
+				@include for-phone-only {
+					flex-direction: column;
+					align-items: center;
+				}
 
 				.sign-up-window-form__input {
 					width: 280px;
@@ -55,6 +82,12 @@
 					&::placeholder {
 						color: $color-white;
 					}
+
+					@include for-phone-only {
+						width: 100%;
+						margin-bottom: 20px;
+					}
+	
 				}
 
 				input:-webkit-autofill  {
@@ -65,6 +98,11 @@
 				.sign-up-window-form__button {
 					@include primary-button;
 					padding: 16px 40px;
+
+					@include for-phone-only {
+						width: 50%;
+						padding: 12px;
+					}
 				}
 			}
 		}

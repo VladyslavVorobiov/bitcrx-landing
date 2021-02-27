@@ -5,6 +5,10 @@
 .header-wrapper {
 	padding-top: 30px;
 
+	@include for-phone-only {
+		padding-top: 20px;
+	}
+
 	.header-content {
 		width: $content-width;
 		margin: 0 auto;
@@ -13,9 +17,18 @@
 	
 		justify-content: space-between;
 
+		@include for-phone-only {
+			width: 90vw;
+		}
+
 		.header-nav {
 			display: flex;
 			align-items: center;
+
+			@include for-phone-only {
+				justify-content: space-between;
+				width: 100%;
+			}
 
 			.header-nav__logo {
 				margin-right: 76px;
@@ -26,6 +39,10 @@
 				align-items: center;
 				width: 382px;
 				justify-content: space-between;
+
+				@include for-phone-only {
+					display: none;
+				}
 	
 				.header-nav-wrapper__item {
 					@include appearing-from-left-to-right-animation(8s, ease-in-out);
@@ -39,6 +56,15 @@
 					}
 				}
 			}
+
+			.header-mobile-nav-wrapper {
+				display: none;
+				cursor: pointer;
+
+				@include for-phone-only {
+					display: block;
+				}
+			}
 		}
 
 		.header-actions {
@@ -48,6 +74,10 @@
 			align-items: center;
 			width: 285px;
 			justify-content: space-between;
+
+			@include for-phone-only {
+				display: none;
+			}
 
 			.header-actions__select {
 				background-color: inherit;

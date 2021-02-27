@@ -12,6 +12,10 @@
 		display: flex;
 		flex-direction: column;
 
+		@include for-phone-only {
+			width: 90vw;
+		}
+
 		.top-markets__title {
 			font-weight: bold;
 			font-size: 40px;
@@ -30,6 +34,10 @@
 			display: flex;
 			justify-content: space-between;
 
+			@include for-phone-only {
+				flex-direction: column;
+			}
+
 			.coin-primary-card {
 				width: 360px;
 				height: 420px;
@@ -39,9 +47,14 @@
 
 				transition: all .8s ease-in-out;
 
-					&:hover {
-						transform: scale(1.1);
-					}
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				@include for-phone-only {
+					width: 100%;
+					margin-bottom: 40px;
+				}
 
 				.coin-primary-card-header {
 					height: 40%;
@@ -130,6 +143,12 @@
 
 					&:hover {
 						transform: scale(1.03);
+					}
+
+					@include for-phone-only {
+						width: 90vw;
+						flex-direction: column;
+						overflow: hidden;
 					}
 
 					.coin-card__number {

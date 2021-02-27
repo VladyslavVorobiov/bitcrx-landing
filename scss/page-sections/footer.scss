@@ -10,6 +10,10 @@
 		width: $content-width;
 		margin: 0 auto;
 
+		@include for-phone-only {
+			width: 90vw;
+		}
+
 		.footer-content-items-wrapper {
 			display: flex;
 			flex-direction: row;
@@ -17,6 +21,10 @@
 			padding-bottom: 15px;
 			border-bottom: 1px solid rgba(255,255,255,0.2);
 			line-height: 30px;
+
+			@include for-phone-only {
+				flex-direction: column;
+			}
 
 			.footer-content-item {
 
