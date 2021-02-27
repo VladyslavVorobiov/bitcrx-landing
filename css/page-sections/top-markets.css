@@ -1,3 +1,49 @@
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }
+
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
   font-weight: 400;
@@ -15,6 +61,12 @@
       text-align: center;
       width: 100%;
       margin-bottom: 50px; }
+      .top-markets-wrapper .top-markets-content .top-markets__title .top-markets__title-text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        animation: appearing-from-left-to-right 8s ease-in-out; }
     .top-markets-wrapper .top-markets-content .top-markets-coin-info {
       display: flex;
       justify-content: space-between; }
@@ -24,9 +76,9 @@
         background-color: #240847;
         color: #FFFFFF;
         border-radius: 10px;
-        transition: all .2s ease-in-out; }
+        transition: all .8s ease-in-out; }
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card:hover {
-          transform: scale(1.03); }
+          transform: scale(1.1); }
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header {
           height: 40%;
           padding: 30px 30px 0; }

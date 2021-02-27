@@ -18,6 +18,14 @@
     cursor: pointer;
 }
 
+@mixin appearing-from-left-to-right-animation($duration, $timing-function) {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: appearing-from-left-to-right $duration $timing-function;
+}
+
 @mixin position($position, $top, $left) {
     position: $position;
     top: $top;

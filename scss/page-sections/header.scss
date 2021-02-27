@@ -1,5 +1,6 @@
 @import "../constants.scss";
 @import "../mixins.scss";
+@import "../animations.scss";
 
 .header-wrapper {
 	padding-top: 30px;
@@ -27,6 +28,7 @@
 				justify-content: space-between;
 	
 				.header-nav-wrapper__item {
+					@include appearing-from-left-to-right-animation(8s, ease-in-out);
 	
 					a {
 						color: $color-purple-light;
@@ -40,6 +42,8 @@
 		}
 
 		.header-actions {
+			@include appearing-from-left-to-right-animation(4s, ease-in-out);
+
 			display: flex;
 			align-items: center;
 			width: 285px;

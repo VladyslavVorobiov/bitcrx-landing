@@ -1,0 +1,45 @@
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }

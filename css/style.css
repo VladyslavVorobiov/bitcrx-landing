@@ -1,5 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }
+
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }
+
 .header-wrapper {
   padding-top: 30px; }
   .header-wrapper .header-content {
@@ -18,11 +110,22 @@
         align-items: center;
         width: 382px;
         justify-content: space-between; }
-        .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a {
-          color: #AD7ABF; }
-          .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a:hover {
-            color: #FFFFFF; }
+        .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item {
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+          animation: appearing-from-left-to-right 8s ease-in-out; }
+          .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a {
+            color: #AD7ABF; }
+            .header-wrapper .header-content .header-nav .header-nav-wrapper .header-nav-wrapper__item a:hover {
+              color: #FFFFFF; }
     .header-wrapper .header-content .header-actions {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      animation: appearing-from-left-to-right 4s ease-in-out;
       display: flex;
       align-items: center;
       width: 285px;
@@ -44,6 +147,52 @@
         padding: 12px 30px;
         cursor: pointer; }
 
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }
+
 .main-wrapper {
   padding: 95px 0 30px; }
   .main-wrapper .main-content {
@@ -51,12 +200,14 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between; }
     .main-wrapper .main-content .main-content-information {
       display: flex;
       flex-direction: column;
       width: 400px;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      animation: appearing-main-content 4s ease-out; }
       .main-wrapper .main-content .main-content-information .main-content-information-text .main-content-information__title {
         font-weight: bold;
         font-size: 50px;
@@ -87,7 +238,8 @@
       color: #FFFFFF;
       z-index: 1000;
       position: relative;
-      transition: all .8s ease-in-out; }
+      transition: transform .8s ease-in-out;
+      animation: appearing-main-apllication 4s ease-in-out; }
       .main-wrapper .main-content .main-content-application:hover {
         transform: scale(1.2); }
       .main-wrapper .main-content .main-content-application .application-wrapper {
@@ -260,7 +412,8 @@
         top: 125px;
         background: #2F0B5C;
         border-radius: 20px;
-        padding: 15px; }
+        padding: 15px;
+        animation: appearing-apllication-diagram-window 5s linear; }
         .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window__title {
           margin-bottom: 5px; }
         .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-content {
@@ -285,7 +438,8 @@
         bottom: -40px;
         background: #2F0B5C;
         border-radius: 20px;
-        padding: 15px; }
+        padding: 15px;
+        animation: appearing-apllication-course-table-window 5s linear; }
         .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window__title {
           font-size: 10px;
           margin-bottom: 10px; }
@@ -306,6 +460,52 @@
             .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window-content .application-course-table-window-row .application-course-table-window-row__item_red {
               color: #FF6767; }
 
+@keyframes appearing-from-left-to-right {
+  from {
+    width: 0; } }
+
+@keyframes appearing-main-content {
+  0% {
+    transform: translateX(-600px); }
+  50% {
+    transform: translateX(-600px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-main-apllication {
+  0% {
+    transform: translateX(5000px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes appearing-apllication-diagram-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 156px;
+    overflow: hidden; } }
+
+@keyframes appearing-apllication-course-table-window {
+  0% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  80% {
+    padding: 0;
+    width: 0;
+    overflow: hidden; }
+  100% {
+    padding: 15px;
+    width: 220px;
+    overflow: hidden; } }
+
 .top-markets-wrapper {
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
   font-weight: 400;
@@ -323,6 +523,12 @@
       text-align: center;
       width: 100%;
       margin-bottom: 50px; }
+      .top-markets-wrapper .top-markets-content .top-markets__title .top-markets__title-text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        animation: appearing-from-left-to-right 8s ease-in-out; }
     .top-markets-wrapper .top-markets-content .top-markets-coin-info {
       display: flex;
       justify-content: space-between; }
@@ -332,9 +538,9 @@
         background-color: #240847;
         color: #FFFFFF;
         border-radius: 10px;
-        transition: all .2s ease-in-out; }
+        transition: all .8s ease-in-out; }
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card:hover {
-          transform: scale(1.03); }
+          transform: scale(1.1); }
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-header {
           height: 40%;
           padding: 30px 30px 0; }
@@ -591,7 +797,8 @@ body {
   font-family: 'Epilogue', Arial, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  background-color: #580F72; }
+  background-color: #580F72;
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, p {
   padding: 0;

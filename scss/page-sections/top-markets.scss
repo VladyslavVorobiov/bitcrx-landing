@@ -1,5 +1,6 @@
 @import "../constants.scss";
 @import "../mixins.scss";
+@import "../animations.scss";
 
 .top-markets-wrapper {
 	@include Open-Sans-font;
@@ -19,6 +20,10 @@
 			text-align: center;
 			width: 100%;
 			margin-bottom: 50px;
+
+			.top-markets__title-text {
+				@include appearing-from-left-to-right-animation(8s, ease-in-out);
+			}
 		}
 
 		.top-markets-coin-info {
@@ -32,10 +37,10 @@
 				color: $color-white;
 				border-radius: 10px;
 
-				transition: all .2s ease-in-out;
+				transition: all .8s ease-in-out;
 
 					&:hover {
-						transform: scale(1.03);
+						transform: scale(1.1);
 					}
 
 				.coin-primary-card-header {
