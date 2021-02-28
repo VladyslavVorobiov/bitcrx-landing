@@ -303,13 +303,18 @@
             width: 250px;
             height: 360px;
             border-radius: 12px;
-            padding: 12px; } }
+            padding: 0px; } }
         .main-wrapper .main-content .main-content-application .application-wrapper .application-header {
           margin-bottom: 12px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: 544px; }
+          @media (max-width: 599px) {
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-header {
+              flex-wrap: wrap;
+              width: 100%;
+              padding: 12px; } }
           .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper {
             background-color: #4C2976;
             border-radius: 4px;
@@ -342,8 +347,15 @@
             background: #240847;
             border-radius: 10px;
             padding: 10px; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper {
+                width: 100%;
+                height: 225px;
+                border-radius: 12px;
+                padding: 12px; } }
             .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title {
               display: flex;
+              align-items: center;
               justify-content: space-between; }
               .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu {
                 display: flex; }
@@ -354,6 +366,9 @@
                   margin-right: 11px;
                   width: 18px;
                   text-align: center; }
+                  @media (max-width: 599px) {
+                    .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item {
+                      margin-right: 3px; } }
                 .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper .application-diagram-title .application-diagram-title-menu .application-diagram-title-menu__item_highlight {
                   opacity: 1;
                   font-weight: bold; }
@@ -368,6 +383,9 @@
             font-size: 8px;
             background: #240847;
             border-radius: 10px; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper {
+                display: none; } }
             .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions__title {
               font-weight: 600;
               line-height: 14px;
@@ -470,6 +488,14 @@
         border-radius: 20px;
         padding: 15px;
         animation: appearing-apllication-diagram-window 5s linear; }
+        @media (max-width: 599px) {
+          .main-wrapper .main-content .main-content-application .application-course-diagram-window {
+            width: 93px;
+            height: 100px;
+            left: 0px;
+            top: 125px; }
+            .main-wrapper .main-content .main-content-application .application-course-diagram-window img {
+              width: 93px; } }
         .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window__title {
           margin-bottom: 5px; }
         .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window-content {
@@ -496,6 +522,9 @@
         border-radius: 20px;
         padding: 15px;
         animation: appearing-apllication-course-table-window 5s linear; }
+        @media (max-width: 599px) {
+          .main-wrapper .main-content .main-content-application .application-course-table-window {
+            display: none; } }
         .main-wrapper .main-content .main-content-application .application-course-table-window .application-course-table-window__title {
           font-size: 10px;
           margin-bottom: 10px; }

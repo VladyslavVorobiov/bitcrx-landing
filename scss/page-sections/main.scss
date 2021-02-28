@@ -123,7 +123,7 @@
 					width: 250px;
 					height: 360px;
 					border-radius: 12px;
-					padding: 12px;
+					padding: 0px;
 				}
 
 				.application-header {
@@ -132,6 +132,12 @@
 					align-items: center;
 					justify-content: space-between;
 					width: 544px;
+
+					@include for-phone-only {
+						flex-wrap: wrap;
+						width: 100%;
+						padding: 12px;
+					}
 
 					.application-header__crypto-name-wrapper {
 						background-color: $color-purple-light-200;
@@ -183,8 +189,16 @@
 						border-radius: 10px;
 						padding: 10px;
 
+						@include for-phone-only {
+							width: 100%;
+							height: 225px;
+							border-radius: 12px;
+							padding: 12px;
+						}
+
 						.application-diagram-title {
 							display: flex;
+							align-items: center;
 							justify-content: space-between;
 
 							.application-diagram-title-menu {
@@ -197,6 +211,10 @@
 									margin-right: 11px;
 									width: 18px;
 									text-align: center;
+
+									@include for-phone-only {
+										margin-right: 3px;
+									}
 								}
 								.application-diagram-title-menu__item_highlight {
 									opacity: 1;
@@ -222,6 +240,10 @@
 						
 						background: $color-midnightblue-200;
 						border-radius: 10px;
+
+						@include for-phone-only {
+							display: none;
+						}
 
 						.application-actions__title {
 							font-weight: 600;
@@ -367,6 +389,17 @@
 
 				animation: appearing-apllication-diagram-window 5s linear;
 
+				@include for-phone-only {
+					width: 93px;
+					height: 100px;
+					left: 0px;
+					top: 125px;
+
+					img {
+						width: 93px;
+					}
+				}
+
 				.application-course-diagram-window__title {
 					margin-bottom: 5px;
 				}
@@ -408,6 +441,10 @@
 				padding: 15px;
 				
 				animation: appearing-apllication-course-table-window 5s linear;
+
+				@include for-phone-only {
+					display: none;
+				}
 
 				.application-course-table-window__title {
 					font-size: 10px;
