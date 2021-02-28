@@ -701,7 +701,7 @@
         .top-markets-wrapper .top-markets-content .top-markets-coin-info .coin-primary-card .coin-primary-card-exchange-wrapper {
           width: 100%;
           height: 60%;
-          background-image: url("../../img/icons/big-curved-line.svg");
+          background-image: url("./img/icons/big-curved-line.svg");
           background-repeat: no-repeat;
           display: flex;
           justify-content: space-between;
