@@ -314,7 +314,8 @@
             .main-wrapper .main-content .main-content-application .application-wrapper .application-header {
               flex-wrap: wrap;
               width: 100%;
-              padding: 12px; } }
+              padding: 12px 12px 8px;
+              margin-bottom: 0; } }
           .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper {
             background-color: #4C2976;
             border-radius: 4px;
@@ -322,6 +323,12 @@
             font-size: 10px;
             line-height: 14px;
             padding: 5px 10px; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper {
+                height: 32px;
+                margin-bottom: 9px;
+                display: flex;
+                align-items: center; } }
             .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__crypto-name-wrapper .application-header__crypto-name {
               margin-left: 8px; }
           .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item {
@@ -338,9 +345,28 @@
               .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-content .application-header__item-content_green {
                 color: #58BA74;
                 font-weight: normal; }
+          @media (max-width: 599px) {
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version {
+              display: block;
+              margin-bottom: 10px;
+              color: #58BA74; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-title {
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 4px; }
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content {
+                font-size: 9px; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price-percent {
+                  color: #FFFFFF;
+                  opacity: 0.5; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price_gold {
+                  color: #FFAE34; } }
         .main-wrapper .main-content .main-content-application .application-wrapper .application-content {
           display: flex;
           justify-content: space-between; }
+          @media (max-width: 599px) {
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content {
+              flex-direction: column; } }
           .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-diagram-wapper {
             width: 386px;
             height: 357px;
@@ -468,16 +494,28 @@
               margin-bottom: 4px; }
               .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-available-sum .application-actions-available-sum__label {
                 opacity: 0.5; }
-            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-wrapper .application-actions-submit__button {
-              display: block;
-              width: 100%;
-              background-color: #58BA74;
-              border-radius: 4px;
-              padding: 7px 0;
-              text-align: center;
-              font-weight: bold;
-              font-size: 11px;
-              line-height: 14px; }
+          .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-submit__button {
+            display: block;
+            width: 100%;
+            background-color: #58BA74;
+            border-radius: 4px;
+            padding: 7px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 14px; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-actions-submit__button {
+                width: 48%; } }
+          .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-mobile-actions-wrapper {
+            display: none; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-mobile-actions-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 12px; } }
+            .main-wrapper .main-content .main-content-application .application-wrapper .application-content .application-mobile-actions-wrapper .button_secondary {
+              background-color: #E83338; }
       .main-wrapper .main-content .main-content-application .application-course-diagram-window {
         width: 156px;
         height: 110px;
@@ -492,8 +530,8 @@
           .main-wrapper .main-content .main-content-application .application-course-diagram-window {
             width: 93px;
             height: 100px;
-            left: 0px;
-            top: 125px; }
+            left: -15px;
+            top: 85px; }
             .main-wrapper .main-content .main-content-application .application-course-diagram-window img {
               width: 93px; } }
         .main-wrapper .main-content .main-content-application .application-course-diagram-window .application-course-diagram-window__title {
@@ -969,3 +1007,7 @@ button {
 
 select:focus {
   outline: none; }
+
+@media (max-width: 599px) {
+  .block-mobile-version_hidden {
+    display: none; } }

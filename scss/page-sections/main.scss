@@ -136,7 +136,8 @@
 					@include for-phone-only {
 						flex-wrap: wrap;
 						width: 100%;
-						padding: 12px;
+						padding: 12px 12px 8px;
+						margin-bottom: 0;
 					}
 
 					.application-header__crypto-name-wrapper {
@@ -146,6 +147,13 @@
 						font-size: 10px;
 						line-height: 14px;
 						padding: 5px 10px;
+
+						@include for-phone-only {
+							height: 32px;
+							margin-bottom: 9px;
+							display: flex;
+							align-items: center;
+						}
 
 						.application-header__crypto-name {
 							margin-left: 8px;
@@ -176,11 +184,42 @@
 						}
 					}
 
+					.application-header__last-price_mobile-version {
+						@include for-phone-only {
+							display: block;
+							margin-bottom: 10px;
+							color: $color-green;
+
+							.application-header__last-price-title {
+								font-weight: bold;
+								font-size: 16px;
+								margin-bottom: 4px;
+							}
+
+							.application-header__last-price-content {
+								font-size: 9px;
+
+								.application-header__last-price-percent {
+									color: $color-white;
+									opacity: 0.5;
+								}
+
+								.application-header__last-price_gold {
+									color: $color-gold;
+								}
+							}
+						}
+					} 
+
 				}
 
 				.application-content {
 					display: flex;
 					justify-content: space-between;
+
+					@include for-phone-only {
+						flex-direction: column;
+					}
 
 					.application-diagram-wapper {
 						width: 386px;
@@ -361,17 +400,35 @@
 								opacity: 0.5;
 							}
 						}
+					}
 
-						.application-actions-submit__button {
-							display: block;
-							width: 100%;
-							background-color: $color-green;
-							border-radius: 4px;
-							padding: 7px 0;
-							text-align: center;
-							font-weight: bold;
-							font-size: 11px;
-							line-height: 14px;
+					.application-actions-submit__button {
+						display: block;
+						width: 100%;
+						background-color: $color-green;
+						border-radius: 4px;
+						padding: 7px 0;
+						text-align: center;
+						font-weight: bold;
+						font-size: 11px;
+						line-height: 14px;
+
+						@include for-phone-only {
+							width: 48%;
+						}
+					}
+
+					.application-mobile-actions-wrapper {
+						display: none;
+
+						@include for-phone-only {
+							display: flex;
+							justify-content: space-between;
+							padding: 8px 12px;
+						}
+
+						.button_secondary {
+							background-color: $color-red;
 						}
 					}
 				}
@@ -392,8 +449,8 @@
 				@include for-phone-only {
 					width: 93px;
 					height: 100px;
-					left: 0px;
-					top: 125px;
+					left: -15px;
+					top: 85px;
 
 					img {
 						width: 93px;
@@ -472,7 +529,7 @@
 						}
 
 						.application-course-table-window-row__item_red {
-							color: $color-red;
+							color: $color-light-red;
 						}
 					}
 				}
