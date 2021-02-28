@@ -185,6 +185,8 @@
 					}
 
 					.application-header__last-price_mobile-version {
+						display: none;
+
 						@include for-phone-only {
 							display: block;
 							margin-bottom: 10px;

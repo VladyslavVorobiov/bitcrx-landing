@@ -345,22 +345,24 @@
               .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__item .application-header__item-content .application-header__item-content_green {
                 color: #58BA74;
                 font-weight: normal; }
-          @media (max-width: 599px) {
-            .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version {
-              display: block;
-              margin-bottom: 10px;
-              color: #58BA74; }
-              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-title {
-                font-weight: bold;
-                font-size: 16px;
-                margin-bottom: 4px; }
-              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content {
-                font-size: 9px; }
-                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price-percent {
-                  color: #FFFFFF;
-                  opacity: 0.5; }
-                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price_gold {
-                  color: #FFAE34; } }
+          .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version {
+            display: none; }
+            @media (max-width: 599px) {
+              .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version {
+                display: block;
+                margin-bottom: 10px;
+                color: #58BA74; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-title {
+                  font-weight: bold;
+                  font-size: 16px;
+                  margin-bottom: 4px; }
+                .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content {
+                  font-size: 9px; }
+                  .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price-percent {
+                    color: #FFFFFF;
+                    opacity: 0.5; }
+                  .main-wrapper .main-content .main-content-application .application-wrapper .application-header .application-header__last-price_mobile-version .application-header__last-price-content .application-header__last-price_gold {
+                    color: #FFAE34; } }
         .main-wrapper .main-content .main-content-application .application-wrapper .application-content {
           display: flex;
           justify-content: space-between; }
